@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "baseUrl": "https://quotes.test.uinsure.co.uk",
+        "target": "ES2022",
+        "types": ["cypress"]
+    },
+    "include": ["../../node_modules/cypress", "cypress/**/*.ts"]
+}
