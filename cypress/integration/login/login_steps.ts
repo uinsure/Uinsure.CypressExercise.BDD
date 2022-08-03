@@ -1,6 +1,6 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
+import cypress from 'cypress';
 import homePage from '../../support/home.page';
-
 import loginPage from '../../support/login.page';
 
 let emailAddress: string;
@@ -23,7 +23,7 @@ When('the user enters valid details and logs in', () => {
     homePage.buildingsAndContents.should('be.visible');
 });
 
-When('the user can navigate to recent activity', () => {
+Then('the user can navigate to recent activity', () => {
     cy.visit('https://quotes.test.uinsure.co.uk/retrieve-quote');
     homePage.quoteReference.should('be.visible');
 });
