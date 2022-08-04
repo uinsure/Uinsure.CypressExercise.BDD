@@ -1,7 +1,7 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 import cypress from 'cypress';
-import homePage from '../../support/home.page';
-import loginPage from '../../support/login.page';
+import homePage from '../../support/pageObjects/home.page';
+import loginPage from '../../support/pageObjects/login.page';
 
 let emailAddress: string;
 let password: string;
