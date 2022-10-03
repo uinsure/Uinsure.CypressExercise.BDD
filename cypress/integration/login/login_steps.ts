@@ -1,15 +1,7 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
-import cypress from 'cypress';
 import homePage from '../../support/pageObjects/home.page';
 import loginPage from '../../support/pageObjects/login.page';
-
-let emailAddress: string;
-let password: string;
-
-const loginDetails = {
-    emailAddress: 'john.doe@uinsure.co.uk',
-    password: '',
-};
+import { loginDetails } from '../TestData/login';
 
 Given('the user is on the adviser platform login page', () => {
     cy.visit('/');

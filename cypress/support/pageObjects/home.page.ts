@@ -11,6 +11,12 @@ class Homepage {
     get search() {
         return cy.get('[data-testid="filter-button"]');
     }
+    get homeIcon(){
+        return cy.get('[data-testid="nav-drawer-item-activity-icon"]');
+    }
+    get menu(){
+        return cy.get('[data-testid=menu-button]');
+    }
 }
 
 export default new Homepage();
