@@ -1,6 +1,0 @@
-{
-    "baseUrl": "https://quotes.test.uinsure.co.uk/",
-    "testFiles": "**/*.{feature,features}",
-    "ignoreTestFiles": ["*.js", "*.ts", "*.md"],
-    "defaultCommandTimeout": 25000
-}
